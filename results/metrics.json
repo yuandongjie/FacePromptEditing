@@ -1,0 +1,51 @@
+{
+    "model": "Stable Diffusion v1.5",
+    "editing_method": "Prompt-to-Prompt (prompt-only)",
+    "seed": 42,
+    "input_type": "cropped face image (for visualization only)",
+    "base_prompt": "a realistic portrait of a young Chinese female face, front view, symmetrical face, natural skin texture, photorealistic, high quality",
+    "negative_prompt": "male, man, boy, child, elderly man, different person, different face, cartoon, anime, low quality, distorted face",
+    "results": [
+        {
+            "attribute": "age",
+            "base_prompt": "a realistic portrait of a young Chinese female face, front view, symmetrical face, natural skin texture, photorealistic, high quality",
+            "edit_prompt": "young -> old",
+            "negative_prompt": "male, man, boy, child, elderly man, different person, different face, cartoon, anime, low quality, distorted face",
+            "original_image": "results/generated_original.png",
+            "edited_image": "results/generated_edited_age.png",
+            "compare_image": "results/generated_compare_age.png"
+        },
+        {
+            "attribute": "expression",
+            "base_prompt": "a realistic portrait of a young Chinese female face, front view, symmetrical face, natural skin texture, photorealistic, high quality",
+            "edit_prompt": "neutral -> smiling",
+            "negative_prompt": "male, man, boy, child, elderly man, different person, different face, cartoon, anime, low quality, distorted face",
+            "original_image": "results/generated_original.png",
+            "edited_image": "results/generated_edited_expression.png",
+            "compare_image": "results/generated_compare_expression.png"
+        },
+        {
+            "attribute": "occlusion",
+            "base_prompt": "a realistic portrait of a young Chinese female face, front view, symmetrical face, natural skin texture, photorealistic, high quality",
+            "edit_prompt": "wearing a mask",
+            "negative_prompt": "male, man, boy, child, elderly man, different person, different face, cartoon, anime, low quality, distorted face",
+            "original_image": "results/generated_original.png",
+            "edited_image": "results/generated_edited_occlusion.png",
+            "compare_image": "results/generated_compare_occlusion.png"
+        },
+        {
+            "attribute": "style",
+            "base_prompt": "a realistic portrait of a young Chinese female face, front view, symmetrical face, natural skin texture, photorealistic, high quality",
+            "edit_prompt": "anime",
+            "negative_prompt": "male, man, boy, child, elderly man, different person, different face, cartoon, anime, low quality, distorted face",
+            "original_image": "results/generated_original.png",
+            "edited_image": "results/generated_edited_style.png",
+            "compare_image": "results/generated_compare_style.png"
+        }
+    ],
+    "limitations": [
+        "No explicit identity constraint",
+        "Prompt-only editing",
+        "Identity preservation is not guaranteed"
+    ]
+}

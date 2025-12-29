@@ -53,12 +53,45 @@ pillow
 ```
 
 ### 3.3 模型准备
-下载 Stable Diffusion v1.5 safetensors 模型，并放置在：
-models/v1-5-pruned-emaonly-fp16.safetensors (已下载好)
+
+本项目使用 Stable Diffusion v1.5 模型（文件名 v1-5-pruned-emaonly-fp16.safetensors）。
+
+注意事项：
+
+该文件较大 (2.13GB)，直接通过 Git 上传/下载非常慢。
+
+建议使用 Git LFS 以加速下载大文件。
+
+两种方式获取模型：
+
+A、 使用 Git LFS 下载整个仓库（推荐）：
+
+安装 Git LFS
+```
+git lfs install
+```
+
+克隆仓库并自动拉取大文件
+```
+git clone git@github.com:你的用户名/FacePromptEditing.git
+```
+
+
+B、先下载代码，再单独下载模型文件：
+
+下载仓库代码（src/、README.md 等小文件），再单独下载模型文件：
+v1-5-pruned-emaonly-fp16.safetensors 
+
+模型下载地址：https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/tree/main
+
+放置到项目 models 目录下：
+
+FacePromptEditing/models/v1-5-pruned-emaonly-fp16.safetensors
 
 
 ### 3.4 数据准备
-将待编辑的基准人脸图像放在：
+将待编辑的基准人脸图像命名为base_face.png，并放在results目录下：
+
 results/base_face.png
 
 
