@@ -88,6 +88,11 @@ v1-5-pruned-emaonly-fp16.safetensors
 
 FacePromptEditing/models/v1-5-pruned-emaonly-fp16.safetensors
 
+修改src/model.py文件中model_path的路径为你的实际路径：
+
+
+默认值是 = r"D:\SoftwareWorkSpace\PyCharm\FacePromptEditing\models\v1-5-pruned-emaonly-fp16.safetensors"
+
 
 ### 3.4 数据准备
 将待编辑的基准人脸图像命名为base_face.png，并放在results目录下：
@@ -189,3 +194,4 @@ JSON 记录 Base Prompt、Negative Prompt、每个属性的编辑信息和生成
 生成速度：在 CPU 环境下生成速度较慢（每张图片可能3~6分钟）。
 
 效果依赖：编辑效果依赖于 Base Prompt 和属性 Prompt 的描述精确度。
+
